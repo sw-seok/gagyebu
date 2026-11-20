@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>가계부 수집</title>
+<style>
+  :root { --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --link:#0969da; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --link:#4493f8; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 system-ui, -apple-system, "Malgun Gothic", sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:1.6rem; margin:0 0 8px; }
+  p.lead { color:var(--muted); margin:0 0 32px; }
+  li { margin:4px 0; }
+  a { color:var(--link); }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>가계부 수집</h1>
+  <p class="lead">한 가족이 개인적으로 쓰는 가계부 도구입니다. 일반에 제공하는 서비스가 아닙니다.</p>
+
+  <h2>하는 일</h2>
+  <ul>
+    <li>사용자 본인의 Gmail에서 <strong>뱅크샐러드 데이터 내보내기 메일의 첨부파일(zip)만</strong> 읽기 전용으로 내려받습니다.</li>
+    <li>내려받은 파일은 사용자 본인의 PC에서만 처리되어 가계부로 정리됩니다.</li>
+  </ul>
+
+  <h2>하지 않는 일</h2>
+  <ul>
+    <li>메일 보내기·삭제·수정·라벨 변경을 하지 않습니다. (요청 권한: <code>gmail.readonly</code> 하나)</li>
+    <li>다른 메일의 본문을 읽거나 저장하지 않습니다.</li>
+    <li>데이터를 제3자에게 전송·판매·공유하지 않습니다.</li>
+  </ul>
+
+  <footer><a href="privacy.html">개인정보처리방침</a></footer>
+</main>
+</body>
+</html>
